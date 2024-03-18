@@ -9,3 +9,67 @@ body{
     margin: 0;
     padding: 0;
 }
+
+/*
+        CORES
+
+  azul ciano : #48A9A6
+  branco metal : #F8F0FB
+  roxo azul escuro : #190E4F
+  preto azulado : #03012C
+  rosa avermelhado : #FD0D61
+
+*/
+nav > #icon-menu > i{
+    font-size: 2em;
+    padding: 4px;
+    cursor: pointer;
+
+    display: none;
+}
+
+nav #menu-celular{
+    display: none;
+}
+
+nav > #icon-menu:hover > ul{
+    display: block;
+}
+
+nav #menu-celular li{
+    background-color: #F8F0FB;
+    padding: 5px;
+    text-align: center;
+
+    list-style-type: none;
+}
+
+nav #menu-celular li:hover{
+    background-color: #48A9A6;
+    cursor: pointer;
+}
+
+@media (max-width: 600px){
+    nav > #icon-menu > i{
+        display: block;
+    }
+    nav > #menu{
+        display: none;
+    }
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav > #menu li{
+    padding: 5px;
+}
+
+nav > #menu li:hover{
+    border-bottom: solid 2px black;
+    cursor: pointer;
+
+    list-style-type: none;
+}
