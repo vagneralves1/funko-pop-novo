@@ -22,11 +22,89 @@ body{
 */
 
 
+header{
+    background-color: #03012C;
+}
+
+header > p{
+    display: block;
+    background-color: #190E4F;
+    color: white;
+    padding: 10px;
+    height: 25px;
+    margin-left: auto;
+
+    grid-area: "img";
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(225, 235, 252);
+}
+
+nav > div > i{
+    background-color: #040239;
+    color: white;
+    display: block;
+    font-size: 2em;
+    padding: 4px;
+    width: 40px;
+    text-align: center;
+
+    margin-right: auto;
+}
+
+nav > #icon-menu{
+    grid-area: "menu";
+    display: none;
+}
+
+nav > #icon-menu > ul{
+    display: none;
+    background-color: #040239;
+    width: 130%;
+    text-align: center;
+}
+
+nav #icon-menu:hover ul{
+    display: block;
+}
+
+nav > #icon-menu li{
+    padding: 5px;
+}
+
+nav > #icon-menu li:hover{
+    background-color: #190E4F;
+    transition-duration: 0.3s;
+}
+
+nav > #icon-menu li:hover a{
+    color: #9ca5ea;
+}
 
 
+@media(max-width: 600px) {
+    nav > #icon-menu{
+        display: block;
+    }
+    nav > #menu{
+        display:none;
+    }
 
-
-
+    header{
+        background-color: #03012C;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-areas:
+        "menu img"
+        ;
+    }
+}
 
 
 /*header{
