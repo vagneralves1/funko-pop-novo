@@ -20,12 +20,36 @@ body{
   rosa avermelhado : #FD0D61
 
 */
+
+
+
+
+
+
+
+
+
+/*header{
+    display: grid;
+    grid-template-areas:
+    "img menu"
+    ;
+}
+
+header > p{
+    grid-area: "img";
+}
+
+nav > #icon-menu{
+    display: none;
+}
+
 nav > #icon-menu > i{
     font-size: 2em;
     padding: 4px;
     cursor: pointer;
 
-    display: none;
+    grid-area: "icon";
 }
 
 nav #menu-celular{
@@ -50,11 +74,16 @@ nav #menu-celular li:hover{
 }
 
 @media (max-width: 600px){
-    nav > #icon-menu > i{
+    nav > #icon-menu{
         display: block;
     }
-    nav > #menu{
+    nav > #menu > li{
         display: none;
+    }
+    header{
+        grid-template-areas: 
+        "icon img"
+        ;
     }
 }
 
@@ -63,13 +92,25 @@ nav a{
     color: black;
 }
 
-nav > #menu li{
+nav > #menu{
+    margin-left: auto;
     padding: 5px;
+    width: 260px;
+    display: flex;
+
+    grid-area: "menu";
+}
+
+nav > #menu li{
+    width: 100px;
+    padding: 5px;
+    margin-left: 10px;
+    text-align: center;
+    list-style-type: none;
 }
 
 nav > #menu li:hover{
     border-bottom: solid 2px black;
     cursor: pointer;
-
-    list-style-type: none;
 }
+*/
