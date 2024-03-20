@@ -23,7 +23,12 @@ body{
 
 
 header{
-    background-color: #03012C;
+    background-color: #03012c;
+
+    display: grid;
+    grid-template-areas:
+    "menu img"
+    ;
 }
 
 header > p{
@@ -43,7 +48,7 @@ nav li{
 
 nav a{
     text-decoration: none;
-    color: rgb(225, 235, 252);
+    color: rgb(246, 250, 255);
 }
 
 nav > div > i{
@@ -104,6 +109,31 @@ nav > #icon-menu li:hover a{
         "menu img"
         ;
     }
+}
+
+nav > #menu{
+    display: flex;
+    margin-left: 30px;
+
+    grid-area: "menu";
+}
+
+nav > #menu li{
+    padding: 5px;
+    padding-bottom: 10px;
+    margin: 5px;
+    font-size: 1em;
+
+    display: block;
+    transition-duration: 0.3s;
+}
+
+nav > #menu li:hover{
+    border-bottom: 2px solid white;
+}
+
+nav > #menu li:hover > a{
+    color: rgb(207, 221, 249);
 }
 
 
