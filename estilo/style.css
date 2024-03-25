@@ -88,10 +88,6 @@ nav > #icon-menu > ul{
     text-align: center;
 }
 
-nav #icon-menu:hover ul{
-    display: block;
-}
-
 nav > #icon-menu li{
     padding: 5px;
 }
@@ -167,7 +163,20 @@ main > .img-topo{
     width: 100%;
 }
 
-main > #text1{
+@media (min-width: 1200px){
+    main #conteudo1{
+        background-color: black;
+        width: 100%;
+    }
+
+    .img-topo > img{
+        display: block;
+        width: 85%;
+        margin-left: auto;
+    }
+}
+
+main #text1{
     color: rgb(201, 201, 201);
     width: 35%;
 
@@ -176,104 +185,48 @@ main > #text1{
     left: 1.5%;
 }
 
-main > #text1 > h1{
+main #text1 > h1{
     padding-bottom: 30px;
     font-size: clamp(0.8em, 1em + 2.5vw, 2em);
 }
 
-@media(max-width: 610px){
-    main > #text1{
+main #text1 > p{
+    font-size: clamp(1em, 1em + 2vw, 1.2em);
+}
+
+@media(max-width: 630px){
+    main #text1{
        top: 7%;
+       width: 50%;
     }
 
-    main > #text1 > h1{
+    main #text1 > h1{
         padding-bottom: 20px;
+        font-size: 2em;
     }
 
+    main #text1 > p{
+        font-size: clamp(0.8em, 1em + 1.5vw, 1em);
+    }
 }
 
-/*header{
-    display: grid;
-    grid-template-areas:
-    "img menu"
-    ;
+main > #vitrine1{
+    background-color: white;
+    height: 300px;
 }
 
-header > p{
-    grid-area: "img";
+#vitrine1 > .produto-caixa{
+    background-color: blue;
+    width: 30%;
+    height: 100%;
 }
 
-nav > #icon-menu{
-    display: none;
+.produto-caixa > img{
+    width: 98%;
 }
 
-nav > #icon-menu > i{
-    font-size: 2em;
-    padding: 4px;
-    cursor: pointer;
-
-    grid-area: "icon";
-}
-
-nav #menu-celular{
-    display: none;
-}
-
-nav > #icon-menu:hover > ul{
-    display: block;
-}
-
-nav #menu-celular li{
-    background-color: #F8F0FB;
-    padding: 5px;
+.produto-caixa > h1{
+    color: white;
     text-align: center;
-
-    list-style-type: none;
-}
-
-nav #menu-celular li:hover{
-    background-color: #48A9A6;
-    cursor: pointer;
-}
-
-@media (max-width: 600px){
-    nav > #icon-menu{
-        display: block;
-    }
-    nav > #menu > li{
-        display: none;
-    }
-    header{
-        grid-template-areas: 
-        "icon img"
-        ;
-    }
-}
-
-nav a{
-    text-decoration: none;
-    color: black;
-}
-
-nav > #menu{
-    margin-left: auto;
     padding: 5px;
-    width: 260px;
-    display: flex;
-
-    grid-area: "menu";
 }
-
-nav > #menu li{
-    width: 100px;
-    padding: 5px;
-    margin-left: 10px;
-    text-align: center;
-    list-style-type: none;
-}
-
-nav > #menu li:hover{
-    border-bottom: solid 2px black;
-    cursor: pointer;
-}
-*/
