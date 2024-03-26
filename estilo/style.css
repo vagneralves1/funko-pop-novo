@@ -8,7 +8,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: green;
+    background-color: #190E4F;
 }
 
 /*
@@ -210,23 +210,54 @@ main #text1 > p{
     }
 }
 
-main > #vitrine1{
-    background-color: white;
-    height: 300px;
+.vitrine{
+    width: 100vw;
+    display: flex;
+    overflow-x: scroll;
+    margin: auto;
+
+    background-color: #020119;
+    background: url('../img/bolhas-de-agua.png');
+    margin-top: -3px;
 }
 
-#vitrine1 > .produto-caixa{
-    background-color: blue;
-    width: 30%;
-    height: 100%;
-}
-
-.produto-caixa > img{
-    width: 98%;
-}
-
-.produto-caixa > h1{
+.vitrine > a{
+    text-decoration: none;
     color: white;
-    text-align: center;
+
+}
+
+.vitrine .produto{
+    max-width: 300px;
+    min-width: 180px;
+
     padding: 5px;
+    margin: 5px;
+
+    background-color: #ffffff0c;
+}
+
+.produto img{
+    width: 100%;
+}
+
+.produto > h1{
+    text-align: center;
+    font-size: clamp(1em, 1em + 2em, 1.5em);
+}
+
+.produto > .preço-anterior{
+    color: rgb(185, 185, 185);
+    font-size: clamp(0.6, 0.8em + 1em, 0.9em);
+    text-decoration: line-through;
+}
+
+.produto > .preço-atual{
+    font-size: clamp(1em, 1em + 1.2em, 1.2em);
+}
+
+.produto > h2{
+    text-align: center;
+    background-color: rgb(42, 174, 42);
+    color: rgb(190, 255, 190);
 }
