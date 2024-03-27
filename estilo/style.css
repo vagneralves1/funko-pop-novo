@@ -9,6 +9,8 @@ body{
     margin: 0;
     padding: 0;
     background-color: #190E4F;
+
+    overflow-x: hidden;
 }
 
 /*
@@ -221,10 +223,24 @@ main #text1 > p{
     margin-top: -3px;
 }
 
+.vitrine::-webkit-scrollbar{
+    height: 10px;
+}
+
+.vitrine::-webkit-scrollbar-track{
+    background-color: #f8f0fb20;
+}
+
+.vitrine::-webkit-scrollbar-thumb{
+    background-color: #03012cd6;/* #03012C */
+    border-radius: 5px;
+}
+
 .vitrine > a{
     text-decoration: none;
     color: white;
 
+    margin: auto;
 }
 
 .vitrine .produto{
@@ -234,7 +250,12 @@ main #text1 > p{
     padding: 5px;
     margin: 5px;
 
-    background-color: #ffffff0c;
+    background-color: #ffffff10;
+    transition-duration: 0.3s;
+}
+
+.vitrine .produto:hover{
+    background-color: #ffffff20;
 }
 
 .produto img{
@@ -258,6 +279,6 @@ main #text1 > p{
 
 .produto > h2{
     text-align: center;
-    background-color: rgb(42, 174, 42);
+    background-color: rgba(42, 174, 42, 0.686);
     color: rgb(190, 255, 190);
 }
